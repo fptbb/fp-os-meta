@@ -1,0 +1,34 @@
+name: Update meta.spec when packages.json changes
+
+on:
+  push:
+    paths:
+      - "packages.json"
+
+jobs:
+  update-spec:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate rpms/meta.spec
+        run: python3 main.py packages.json
+
+      - name: Commit changes if any
+        run: |
+          if [[ -n "$(git status --porcelain rpms/meta.spec)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add rpms/meta.spec
+            git commit -m "chore: regenerate meta.spec from packages.json"
+            git push
+          else
+            echo "No changes detected in rpms/meta.spec, skipping commit."
+          fi
