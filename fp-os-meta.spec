@@ -9,6 +9,7 @@ BuildArch:      noarch
 Requires:       bash
 Requires:       coreutils
 Requires:       ffmpeg
+Requires:       yadm
 
 %description
 This is a dummy package that doesn’t ship anything itself, but pulls in
