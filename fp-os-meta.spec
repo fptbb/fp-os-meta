@@ -53,5 +53,7 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Mon Sep 15 2025 Lucas <you@example.com> - 1.0-1
+* Mon Sep 15 2025 Lucas <lucas@fptbb.com> - 1.0-2
+- Added packages
+* Mon Sep 15 2025 Lucas <lucas@fptbb.com> - 1.0-1
 - Initial package
