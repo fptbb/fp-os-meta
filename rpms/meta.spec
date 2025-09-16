@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        6%{?dist}
+Release:        1%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
