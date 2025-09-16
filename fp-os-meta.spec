@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -34,6 +34,9 @@ Requires:       gnome-calculator
 Requires:       gnome-disk-utility
 Requires:       kleopatra
 Requires:       pam-u2f
+Requires:       rpm-build
+Requires:       rpmdevtools
+Requires:       copr-cli
 
 %description
 This is a dummy package that doesn’t ship anything itself, but pulls in
