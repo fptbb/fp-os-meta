@@ -5,7 +5,7 @@ Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
 
-# This is the important part — dependencies you want installed:
+# Dependencies
 Requires:       megatools
 Requires:       fuse-encfs
 Requires:       yt-dlp
