@@ -6,10 +6,34 @@ License:        MIT
 BuildArch:      noarch
 
 # This is the important part — dependencies you want installed:
-Requires:       bash
-Requires:       coreutils
-Requires:       ffmpeg
-Requires:       yadm
+Requires:       megatools
+Requires:       fuse-encfs
+Requires:       yt-dlp
+Requires:       coreos-installer
+Requires:       gameconqueror
+Requires:       nmap-ncat
+Requires:       netcat
+Requires:       libpcap
+Requires:       libnotify
+Requires:       iproute
+Requires:       freerdp
+Requires:       dialog
+Requires:       upx
+Requires:       tinygo
+Requires:       golang
+Requires:       gnupg2
+Requires:       git
+Requires:       buildah
+Requires:       code
+Requires:       bash-completion
+Requires:       powerline-fonts
+Requires:       zsh
+Requires:       kitty
+Requires:       kde-partitionmanager
+Requires:       gnome-calculator
+Requires:       gnome-disk-utility
+Requires:       kleopatra
+Requires:       pam-u2f
 
 %description
 This is a dummy package that doesn’t ship anything itself, but pulls in
