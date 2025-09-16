@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -83,5 +83,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Tue Sep 16 2025 Lucas <lucas@fptbb.com> - 1.0-5
+* Tue Sep 16 2025 Lucas <lucas@fptbb.com> - 1.0-6
 - Regenerated package list
