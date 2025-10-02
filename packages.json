@@ -27,5 +27,6 @@
     { "package": "tinygo", "comment": "Small Go compiler for microcontrollers and WebAssembly" },
     { "package": "upx", "comment": "Ultimate Packer for Executables (binary compressor)" },
     { "package": "yt-dlp", "comment": "Powerful video downloader with YouTube support" },
-    { "package": "zsh", "comment": "Feature-rich shell with scripting capabilities" }
+    { "package": "zsh", "comment": "Feature-rich shell with scripting capabilities" },
+    { "package": "protonvpn-cli", "comment": "The official Linux CLI for ProtonVPN." }
 ]
