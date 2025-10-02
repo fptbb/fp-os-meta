@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -52,6 +52,8 @@ Requires:       nmap-ncat
 Requires:       pam-u2f
 # Patched fonts with powerline symbols
 Requires:       powerline-fonts
+# The official Linux CLI for ProtonVPN.
+Requires:       protonvpn-cli
 # Tools to build RPM packages
 Requires:       rpm-build
 # Developer tools for RPM packaging
@@ -83,5 +85,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Tue Sep 16 2025 Lucas <lucas@fptbb.com> - 1.0-2
+* Thu Oct 02 2025 Lucas <lucas@fptbb.com> - 1.0-3
 - Regenerated package list
