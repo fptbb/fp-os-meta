@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -18,6 +18,8 @@ Requires:       copr-cli
 Requires:       coreos-installer
 # Show text-based UI dialogs in shell scripts
 Requires:       dialog
+# Dolphin integration for revision control systems, Dropbox, and disk images.
+Requires:       dolphin-plugins
 # Encrypted filesystem support via FUSE
 Requires:       fuse-encfs
 # Cheat Engine for Linux (debug and memory edit)
@@ -46,6 +48,8 @@ Requires:       libpcap
 Requires:       megatools
 # TCP/UDP swiss-army knife for networking
 Requires:       netcat
+# The nextcloud desktop client dolphin extension.
+Requires:       nextcloud-client-dolphin
 # Alternative netcat implementation (comes with nmap)
 Requires:       nmap-ncat
 # YubiKey and FIDO U2F authentication for PAM
@@ -85,5 +89,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Thu Oct 02 2025 Lucas <lucas@fptbb.com> - 1.0-3
+* Mon Oct 06 2025 Lucas <lucas@fptbb.com> - 1.0-4
 - Regenerated package list
