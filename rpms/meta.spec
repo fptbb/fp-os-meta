@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -64,6 +64,8 @@ Requires:       rpm-build
 Requires:       rpmdevtools
 # Small Go compiler for microcontrollers and WebAssembly
 Requires:       tinygo
+# TLP is a tool for saving power without the need to delve deeper into technical details.
+Requires:       tlp
 # Ultimate Packer for Executables (binary compressor)
 Requires:       upx
 # Powerful video downloader with YouTube support
@@ -89,5 +91,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Mon Oct 06 2025 Lucas <lucas@fptbb.com> - 1.0-4
+* Mon Oct 20 2025 Lucas <lucas@fptbb.com> - 1.0-5
 - Regenerated package list
