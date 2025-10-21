@@ -31,5 +31,5 @@
     { "package": "protonvpn-cli", "comment": "The official Linux CLI for ProtonVPN." },
     { "package": "dolphin-plugins", "comment": "Dolphin integration for revision control systems, Dropbox, and disk images." },
     { "package": "nextcloud-client-dolphin", "comment": "The nextcloud desktop client dolphin extension." },
-    { "package": "tlp", "comment": "TLP is a tool for saving power without the need to delve deeper into technical details."},
+    { "package": "plasma-discover", "comment": "KDE and Plasma resources management GUI."},
 ]
