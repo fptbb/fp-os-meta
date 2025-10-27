@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -32,6 +32,8 @@ Requires:       gnome-calculator
 Requires:       gnome-disk-utility
 # OpenPGP encryption and signing tools
 Requires:       gnupg2
+# Heimdall is a utility to flash firmware on to Galaxy S devices
+Requires:       heimdall
 # Networking utilities like ip addr and ip route
 Requires:       iproute
 # GUI tool to manage disk partitions
@@ -54,6 +56,8 @@ Requires:       nextcloud-client-dolphin
 Requires:       nmap-ncat
 # YubiKey and FIDO U2F authentication for PAM
 Requires:       pam-u2f
+# KDE and Plasma resources management GUI.
+Requires:       plasma-discover
 # Patched fonts with powerline symbols
 Requires:       powerline-fonts
 # The official Linux CLI for ProtonVPN.
@@ -64,8 +68,6 @@ Requires:       rpm-build
 Requires:       rpmdevtools
 # Small Go compiler for microcontrollers and WebAssembly
 Requires:       tinygo
-# TLP is a tool for saving power without the need to delve deeper into technical details.
-Requires:       tlp
 # Ultimate Packer for Executables (binary compressor)
 Requires:       upx
 # Powerful video downloader with YouTube support
@@ -91,5 +93,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Mon Oct 20 2025 Lucas <lucas@fptbb.com> - 1.0-5
+* Mon Oct 27 2025 Lucas <lucas@fptbb.com> - 1.0-6
 - Regenerated package list
