@@ -31,6 +31,5 @@
     { "package": "protonvpn-cli", "comment": "The official Linux CLI for ProtonVPN." },
     { "package": "dolphin-plugins", "comment": "Dolphin integration for revision control systems, Dropbox, and disk images." },
     { "package": "nextcloud-client-dolphin", "comment": "The nextcloud desktop client dolphin extension." },
-    { "package": "plasma-discover", "comment": "KDE and Plasma resources management GUI."},
     { "package": "heimdall", "comment": "Heimdall is a utility to flash firmware on to Galaxy S devices"}
 ]
