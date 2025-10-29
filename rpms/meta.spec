@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -56,8 +56,6 @@ Requires:       nextcloud-client-dolphin
 Requires:       nmap-ncat
 # YubiKey and FIDO U2F authentication for PAM
 Requires:       pam-u2f
-# KDE and Plasma resources management GUI.
-Requires:       plasma-discover
 # Patched fonts with powerline symbols
 Requires:       powerline-fonts
 # The official Linux CLI for ProtonVPN.
@@ -93,5 +91,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Mon Oct 27 2025 Lucas <lucas@fptbb.com> - 1.0-6
+* Wed Oct 29 2025 Lucas <lucas@fptbb.com> - 1.0-7
 - Regenerated package list
