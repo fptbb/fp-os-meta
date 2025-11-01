@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -54,6 +54,8 @@ Requires:       netcat
 Requires:       nextcloud-client-dolphin
 # Alternative netcat implementation (comes with nmap)
 Requires:       nmap-ncat
+# Very high compression ratio file archiver
+Requires:       p7zip
 # YubiKey and FIDO U2F authentication for PAM
 Requires:       pam-u2f
 # Patched fonts with powerline symbols
@@ -68,6 +70,10 @@ Requires:       rpmdevtools
 Requires:       tinygo
 # Ultimate Packer for Executables (binary compressor)
 Requires:       upx
+# A compatibility layer for windows applications
+Requires:       wine
+# Work around common problems in Wine
+Requires:       winetricks
 # Powerful video downloader with YouTube support
 Requires:       yt-dlp
 # Feature-rich shell with scripting capabilities
@@ -91,5 +97,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Wed Oct 29 2025 Lucas <lucas@fptbb.com> - 1.0-7
+* Sat Nov 01 2025 Lucas <lucas@fptbb.com> - 1.0-8
 - Regenerated package list
