@@ -31,5 +31,8 @@
     { "package": "protonvpn-cli", "comment": "The official Linux CLI for ProtonVPN." },
     { "package": "dolphin-plugins", "comment": "Dolphin integration for revision control systems, Dropbox, and disk images." },
     { "package": "nextcloud-client-dolphin", "comment": "The nextcloud desktop client dolphin extension." },
-    { "package": "heimdall", "comment": "Heimdall is a utility to flash firmware on to Galaxy S devices"}
+    { "package": "heimdall", "comment": "Heimdall is a utility to flash firmware on to Galaxy S devices"},
+    { "package": "p7zip", "comment": "Very high compression ratio file archiver"},
+    { "package": "wine", "comment": "A compatibility layer for windows applications"},
+    { "package": "winetricks", "comment": "Work around common problems in Wine"}
 ]
