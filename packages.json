@@ -34,11 +34,5 @@
     { "package": "heimdall", "comment": "Heimdall is a utility to flash firmware on to Galaxy S devices"},
     { "package": "p7zip", "comment": "Very high compression ratio file archiver"},
     { "package": "wine", "comment": "A compatibility layer for windows applications"},
-    { "package": "winetricks", "comment": "Work around common problems in Wine"},
-    { "package": "python3-pyqt6", "comment": "Python 3 bindings for Qt6"},
-    { "package": "python3-pyside6", "comment": "Python bindings for the Qt 6 cross-platform application and UI framework"},
-    { "package": "kf6-kirigami-devel", "comment": "Development files for kf6-kirigami"},
-    { "package": "flatpak-builder", "comment": "Tool to build flatpaks from source"},
-    { "package": "kf6-qqc2-desktop-style", "comment": "QtQuickControls2 style for consistency between QWidget and QML apps"},
-    { "package": "appstream-compose", "comment": "Library for generating AppStream data"}
+    { "package": "winetricks", "comment": "Work around common problems in Wine"}
 ]
