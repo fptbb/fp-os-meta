@@ -1,11 +1,13 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
 
 # Dependencies
+# Library for generating AppStream data
+Requires:       appstream-compose
 # Enables tab-completion for many CLI tools
 Requires:       bash-completion
 # Build OCI/Docker images without needing a daemon
@@ -20,6 +22,8 @@ Requires:       coreos-installer
 Requires:       dialog
 # Dolphin integration for revision control systems, Dropbox, and disk images.
 Requires:       dolphin-plugins
+# Tool to build flatpaks from source
+Requires:       flatpak-builder
 # Encrypted filesystem support via FUSE
 Requires:       fuse-encfs
 # Cheat Engine for Linux (debug and memory edit)
@@ -38,6 +42,10 @@ Requires:       heimdall
 Requires:       iproute
 # GUI tool to manage disk partitions
 Requires:       kde-partitionmanager
+# Development files for kf6-kirigami
+Requires:       kf6-kirigami-devel
+# QtQuickControls2 style for consistency between QWidget and QML apps
+Requires:       kf6-qqc2-desktop-style
 # Extremely fast, GPU-accelerated terminal emulator
 Requires:       kitty
 # Certificate and key management tool
@@ -62,6 +70,10 @@ Requires:       pam-u2f
 Requires:       powerline-fonts
 # The official Linux CLI for ProtonVPN.
 Requires:       protonvpn-cli
+# Python 3 bindings for Qt6
+Requires:       python3-pyqt6
+# Python bindings for the Qt 6 cross-platform application and UI framework
+Requires:       python3-pyside6
 # Tools to build RPM packages
 Requires:       rpm-build
 # Developer tools for RPM packaging
@@ -97,5 +109,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Sat Nov 01 2025 Lucas <lucas@fptbb.com> - 1.0-8
+* Sun Nov 02 2025 Lucas <lucas@fptbb.com> - 1.0-9
 - Regenerated package list
