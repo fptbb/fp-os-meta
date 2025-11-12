@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -20,6 +20,8 @@ Requires:       coreos-installer
 Requires:       dialog
 # Dolphin integration for revision control systems, Dropbox, and disk images.
 Requires:       dolphin-plugins
+# .NET 8.0 Software Development Kit
+Requires:       dotnet-sdk-8.0
 # Encrypted filesystem support via FUSE
 Requires:       fuse-encfs
 # Cheat Engine for Linux (debug and memory edit)
@@ -97,5 +99,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Sun Nov 02 2025 Lucas <lucas@fptbb.com> - 1.0-10
+* Wed Nov 12 2025 Lucas <lucas@fptbb.com> - 1.0-11
 - Regenerated package list
