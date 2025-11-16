@@ -25,7 +25,7 @@ jobs:
           python-version: "3.x"
 
       - name: Regenerate rpms/meta.spec
-        run: python3 main.py packages.json
+        run: python3 meta.py packages.json
 
       - name: Commit changes if any
         id: commit_step
