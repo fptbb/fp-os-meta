@@ -1,6 +1,6 @@
 Name:           fp-os-meta
 Version:        1.0
-Release:        11%{?dist}
+Release:        12%{?dist}
 Summary:        A simple meta-package to install dependencies
 License:        MIT
 BuildArch:      noarch
@@ -48,6 +48,8 @@ Requires:       kleopatra
 Requires:       libnotify
 # Packet capture library for network sniffing tools
 Requires:       libpcap
+# Libraries and header files for the libpcap library
+Requires:       libpcap-devel
 # Access MEGA.nz cloud storage from CLI
 Requires:       megatools
 # TCP/UDP swiss-army knife for networking
@@ -99,5 +101,5 @@ echo "This is a meta-package that installs dependencies." > %{buildroot}%{_docdi
 %doc %{_docdir}/%{name}
 
 %changelog
-* Wed Nov 12 2025 Lucas <lucas@fptbb.com> - 1.0-11
+* Sun Nov 16 2025 Lucas <lucas@fptbb.com> - 1.0-12
 - Regenerated package list
