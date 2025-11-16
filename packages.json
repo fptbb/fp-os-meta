@@ -17,6 +17,7 @@
     { "package": "kleopatra", "comment": "Certificate and key management tool" },
     { "package": "libnotify", "comment": "Send desktop notifications from scripts and apps" },
     { "package": "libpcap", "comment": "Packet capture library for network sniffing tools" },
+    { "package": "libpcap-devel", "comment": "Libraries and header files for the libpcap library" }
     { "package": "megatools", "comment": "Access MEGA.nz cloud storage from CLI" },
     { "package": "netcat", "comment": "TCP/UDP swiss-army knife for networking" },
     { "package": "nmap-ncat", "comment": "Alternative netcat implementation (comes with nmap)" },
